@@ -5,10 +5,12 @@ export const ThemeContext = createContext()
 
 export function ThemeProvider({children})
 {
-    const [theme, setTheme] = useState('light')
+    const themeInitialState = JSON.parse(window.localStorage.getItem('theme'))
+    const [theme, setTheme] = useState(themeInitialState || 'light')
 
     const toggleTheme = ()=>
     {
+        window.localStorage.setItem('theme', JSON.stringify(theme === 'dark' ?  'light': 'dark'))
         setTheme(prevState => prevState === 'dark' ?  'light': 'dark');
     }
 
