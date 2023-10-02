@@ -25,7 +25,7 @@ export function MenuResponsive({toggleMenu})
                     </header>
 
                     <main className="w-full mt-8">
-                    <ul className="flex flex-col text-center text-5xl gap-[74px] md:hidden"> 
+                    <ul className="flex flex-col poppins text-center text-5xl gap-[74px] md:hidden"> 
                         <li><a href="" className="font-bold">About us</a></li>
                         <li><a href="" className="font-bold text-[#6a738e]">Product</a></li>
                         <li><a href="" className="font-bold text-[#6a738e]">Resource</a></li>

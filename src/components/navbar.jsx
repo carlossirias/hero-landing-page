@@ -20,7 +20,7 @@ export function Navbar()
                 <div>
                     <LogoIcon theme={theme} ></LogoIcon>
                 </div>
-                <ul className="flex gap-10 max-md:hidden"> 
+                <ul className="flex gap-10 poppins max-md:hidden"> 
                 <li><a href="" className="font-semibold">About us</a></li>
                 <li><a href="" className="font-semibold text-[#54627b] dark:">Product</a></li>
                 <li><a href="" className="font-semibold text-[#54627b]">Resource</a></li>
